@@ -1,0 +1,108 @@
+{
+  "$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
+  "assists": {
+    "actions": {
+      "source": {
+        "sortJsxProps": "on",
+        "useSortedKeys": "off"
+      }
+    },
+    "enabled": true,
+    "ignore": [
+      ".encore",
+      ".idea",
+      ".next",
+      ".vercel",
+      ".turbo",
+      "build",
+      "dist",
+      "encore.gen",
+      "node_modules"
+    ]
+  },
+  "formatter": {
+    "attributePosition": "multiline",
+    "bracketSpacing": true,
+    "enabled": true,
+    "formatWithErrors": true,
+    "ignore": [
+      ".encore",
+      ".idea",
+      ".next",
+      ".vercel",
+      ".turbo",
+      "build",
+      "dist",
+      "encore.gen",
+      "node_modules"
+    ],
+    "indentStyle": "space",
+    "indentWidth": 2,
+    "lineEnding": "lf",
+    "lineWidth": 80
+  },
+  "javascript": {
+    "formatter": {
+      "enabled": true,
+      "quoteStyle": "double",
+      "semicolons": "always"
+    },
+    "jsxRuntime": "reactClassic",
+    "linter": {
+      "enabled": true
+    }
+  },
+
+  "linter": {
+    "enabled": true,
+    "ignore": [
+      ".encore",
+      ".idea",
+      ".next",
+      ".vercel",
+      ".turbo",
+      "build",
+      "dist",
+      "encore.gen",
+      "node_modules"
+    ]
+  },
+  "organizeImports": {
+    "enabled": true,
+    "ignore": [
+      ".encore",
+      ".idea",
+      ".next",
+      ".vercel",
+      ".turbo",
+      "build",
+      "dist",
+      "encore.gen",
+      "node_modules"
+    ]
+  },
+  "overrides": [
+    {
+      "ignore": [
+        ".encore",
+        ".idea",
+        ".next",
+        ".million",
+        ".vercel",
+        ".turbo",
+        "build",
+        "dist",
+        "encore.gen",
+        "node_modules"
+      ]
+    },
+    {
+      "include": ["./app/**/*.tsx"],
+      "javascript": { "parser": { "unsafeParameterDecoratorsEnabled": true } },
+      "linter": {
+        "enabled": true,
+        "rules": { "style": { "noParameterProperties": "off" } }
+      }
+    }
+  ]
+}
